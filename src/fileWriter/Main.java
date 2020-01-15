@@ -1,8 +1,10 @@
 package fileWriter;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -27,5 +29,13 @@ public class Main {
                 "объектов класса Person. Это просто объявление, такого массива еще нет");
         fileWriter.close();
 
+        FileReader fileReader = new FileReader("hw32.txt");
+        Scanner sc = new Scanner(fileReader);
+        int i = 1;
+        while (sc.hasNextLine()) {
+            System.out.println(sc.nextLine());
+            i++;
+        }
+        fileReader.close();
     }
 }
