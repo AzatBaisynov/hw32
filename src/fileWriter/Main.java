@@ -31,7 +31,6 @@ public class Main {
 
         FileReader fileReader = new FileReader("hw32.txt");
         Scanner sc = new Scanner(fileReader);
-        int i = 1;
         while (sc.hasNextLine()) {
             System.out.println(sc.nextLine());
             i++;
