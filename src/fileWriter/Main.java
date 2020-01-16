@@ -33,7 +33,6 @@ public class Main {
         Scanner sc = new Scanner(fileReader);
         while (sc.hasNextLine()) {
             System.out.println(sc.nextLine());
-            i++;
         }
         fileReader.close();
     }
